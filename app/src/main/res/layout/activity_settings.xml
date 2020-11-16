@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_bg_color"
+        android:gravity="center"
+        android:id="@+id/llSettingsHeader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Settings"
+            android:textColor="@color/whites"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llSettingsHeader"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAppName"
+                android:text="App Name  "
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAppNameValue"
+                android:text=" : TSSO-Wholesale"
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAppVersion"
+                android:text="App Version  "
+                android:gravity="left"
+                android:layout_weight="0.3"
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAppVersionValue"
+                android:text=" : 0.0"
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDeviceId"
+                android:text="DeviceId "
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDeviceIdValue"
+                android:text=""
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUrl"
+                android:text="URL "
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:layout_weight="0.3"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUrlValue"
+                android:text=""
+                android:textSize="@dimen/signin_tv_textsize"
+                android:textColor="@color/black"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"/>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:background="@color/activity_bg_color"-->
+<!--    android:padding="20px">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginBottom="10px">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:text="App Version"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvAppVersionValue"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:layout_weight="0.7"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:text="DeviceId"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDeviceIdValue"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:layout_weight="0.7"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDownloadSettings"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:text="Download Settings"-->
+<!--                android:textColor="#3d3d3d"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"/>-->
+
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:text="Store"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/etStore"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.7"-->
+<!--                android:text="WH"-->
+<!--                android:textColor="@color/whites"-->
+<!--                android:enabled="false"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"-->
+<!--                android:text="SubStore"-->
+<!--                android:textColor="@color/whites"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/etSubStore"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.7"-->
+<!--                android:text="MAIN"-->
+<!--                android:enabled="false"-->
+<!--                android:textColor="@color/whites"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.3"-->
+<!--                android:text="Web Service"-->
+<!--                android:textColor="@color/whites"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/etWebService"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.7"-->
+<!--                android:text="http://tsmith.co.in/sfademo/sfaservice.asmx"-->
+<!--                android:enabled="false"-->
+<!--                android:textColor="@color/whites"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/ll1"-->
+<!--        android:layout_alignParentRight="true">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSubmit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Submit"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnCancel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cancel"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/widget137"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:layout_margin="2dp"-->
+<!--    android:layout_marginBottom="1dp"-->
+<!--    android:layout_weight="0.9"-->
+<!--    android:scrollbars="none"-->
+<!--    android:layout_below="@+id/imSettings"-->
+<!--    android:layout_centerHorizontal="true">-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:id="@+id/imSettings"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_alignParentTop="true"/>-->
+<!--        <TableLayout-->
+<!--            android:id="@+id/tbltSettings"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_below="@+id/imSettings">-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr03"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvDeviceId"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strDeviceId"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvstrDeviceId"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--            </TableRow>-->
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr03"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvEmail3"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/btnDownloadSettings_STNS"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strDownloadSettings"-->
+<!--                    android:background="@drawable/btnbak"-->
+<!--                    android:textColor="@drawable/button_text_color"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:onClick="btnSTNSDownloadSettingsClick"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:layout_gravity="left" />-->
+
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr03"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvVehicleNo"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strStoreCode"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/edtVehicleNo"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:width="230dp"-->
+<!--                    android:layout_gravity="left"-->
+<!--                    />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/trIdentifier2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvIdentifier2"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strIdentifier2"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <EditText-->
+<!--                    android:id="@+id/edtIdentifier2"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:width="230dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr03"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvWSUrl"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strWSUrl"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <EditText-->
+<!--                    android:id="@+id/edtWSUrl"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:width="350dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr03"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvCanSendSms"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/strSMS"-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/chkSendSMS"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="" />-->
+<!--            </TableRow>-->
+
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radioAutoComplete"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="AutoComplete"-->
+<!--                    android:checked="true" />-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radioSearch"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Search" />-->
+<!--            </RadioGroup>-->
+
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radiobtnOnline"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Online"-->
+<!--                    android:checked="true"/>-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/radiobtnOffline"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Offline" />-->
+
+<!--            </RadioGroup>-->
+
+<!--            <TableRow-->
+<!--                android:id="@+id/tblr25"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txvEmail2"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:layout_marginLeft="0dp"-->
+<!--                    android:layout_gravity="left" />-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/widget55"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+<!--                    <Button-->
+<!--                        android:id="@+id/btnSubmit_STNS"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/strSubmit"-->
+<!--                        android:background="@drawable/btnbak"-->
+<!--                        android:textColor="@drawable/button_text_color"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:onClick="btnSTNSSubmitClick"-->
+<!--                        android:layout_gravity="right" />-->
+<!--                    <Button-->
+<!--                        android:id="@+id/btnCancel_STNS"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/strCancel"-->
+<!--                        android:background="@drawable/btnbak"-->
+<!--                        android:textColor="@drawable/button_text_color"-->
+<!--                        android:onClick="btnSTNSCancelClick"-->
+<!--                        android:layout_gravity="right" />-->
+<!--                </LinearLayout>-->
+
+<!--            </TableRow>-->
+<!--        </TableLayout>-->
+<!--    </RelativeLayout>-->
+<!--</ScrollView>-->

@@ -1,0 +1,10 @@
+
+<resources>
+    <!--<dimen name="fab_margin">16dp</dimen>-->
+    <dimen name="signin_heading_textsize">150px</dimen>
+    <dimen name="signin_tv_textsize">42px</dimen>
+    <dimen name="signin_edittext_textsize">44px</dimen>
+    <dimen name="popup_textsize">36px</dimen>
+    <dimen name="edittextsearch_padding">10px</dimen>
+
+</resources>

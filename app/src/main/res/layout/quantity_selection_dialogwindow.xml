@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialogwindow_bg"
+    android:paddingLeft="20px"
+    android:paddingRight="20px">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31.33px"
+        android:layout_marginTop="39.33px"
+        android:background="@drawable/ic_baseline_close_24px"
+        android:id="@+id/imgBtnCloseQtySelection"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSelectedItemName"
+                    android:text=""
+                    android:textColor="@color/whites"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="30px"
+                    android:textSize="56px"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:layout_marginTop="10px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/whiteline"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvMrpInQtySelection"
+                        android:text="MRP : "
+                        android:textColor="@color/whites"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvSOHInQtySelection"
+                        android:text="SOH : "
+                        android:textColor="@color/whites"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="20px"
+                    android:background="@drawable/whiteline"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="60px"
+
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20px">
+                    <!--        android:background="@color/whites"-->
+                    <ImageButton
+                        android:id="@+id/imgBtnMinusPack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_remove_circle_outline_24px"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <EditText
+                        android:id="@+id/etQty"
+                        android:layout_width="300px"
+                        android:layout_height="200px"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/et_roundedbox_bg"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:text="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"/>
+
+                    <ImageButton
+                        android:id="@+id/imgBtnPlusPack"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_add_circle_outline_24px"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="20px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvQtyInUnits_qtySelection"
+                        android:text="Qty in Units: "
+                        android:textColor="@color/whites"
+                        android:layout_alignParentLeft="true"
+                        android:visibility="invisible"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvTotalAmt_QtySelection"
+                        android:text="Approx.Amount: "
+                        android:textColor="@color/whites"
+                        android:layout_alignParentRight="true"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnAddItem_qtySelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120px"
+                    android:layout_gravity="right"
+                    android:text="OK"
+                    android:textColor="@color/whites"
+                    android:background="@drawable/qty_addbtn_bg"
+                    android:layout_marginTop="40px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOfferDesc"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="50px"
+                    android:layout_margin="20px"
+                    android:textColor="@color/whites"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

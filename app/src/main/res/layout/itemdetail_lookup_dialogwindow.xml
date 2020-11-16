@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialogwindow_bg"
+    android:orientation="vertical"
+    android:paddingLeft="20px"
+    android:paddingRight="20px">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31.33px"
+        android:layout_marginTop="39.33px"
+        android:background="@drawable/ic_baseline_close_24px"
+        android:id="@+id/imgBtnCloseItemLookup"/>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/imgBtnCloseItemLookup"-->
+<!--        android:id="@+id/rlSearch">-->
+
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/etSearchItemLookup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/whites"-->
+<!--            android:backgroundTint="@color/whites"/>-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/imgBtnItemSearchLookup"-->
+<!--            android:src="@drawable/ic_search_item"-->
+<!--            android:layout_alignRight="@+id/etSearchItemLookup"-->
+<!--            android:background="@null"-->
+<!--            android:layout_centerVertical="true"/>-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="#"
+            android:textColor="@color/whites"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Item Code"
+            android:textColor="@color/whites"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Product Name"
+            android:textColor="@color/whites"
+            android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="MRP"
+            android:textColor="@color/whites"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="SO QTY"
+            android:textColor="@color/whites"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Line Net"
+            android:textColor="@color/whites"
+            android:gravity="right"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="Billed QTY"
+            android:textColor="@color/whites"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="20px"
+        android:background="@drawable/whiteline"/>
+
+    <ListView
+        android:id="@+id/lvItemsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:padding="10px">
+    </ListView>
+
+</LinearLayout>

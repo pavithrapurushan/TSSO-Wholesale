@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/activity_bg_color">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<!--        android:layout_below="@+id/imgBtnSettings"-->
+        <ImageView
+            android:id="@+id/imgViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_wholesale"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TS-SO Wholesale"
+            android:layout_toRightOf="@+id/imgViewLogo"
+            android:layout_centerVertical="true"
+            android:textColor="@color/whites"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1_Signin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20px"
+        android:paddingRight="10px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="@dimen/signin_heading_textsize"
+            android:textColor="@color/whites"
+            android:textStyle="bold"
+            android:layout_marginBottom="70px"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:textStyle="bold"
+            android:fontFamily="roboto"
+            android:textColor="@color/whites"
+            android:textSize="@dimen/signin_tv_textsize"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your username"
+            android:textColor="@color/whites"
+            android:backgroundTint="@color/whites"
+            android:singleLine="true"
+            android:textSize="@dimen/signin_edittext_textsize"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textStyle="bold"
+            android:textColor="@color/whites"
+            android:textSize="@dimen/signin_tv_textsize"
+            android:layout_marginTop="25px"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:textColor="@color/whites"
+                android:backgroundTint="@color/whites"
+                android:textSize="@dimen/signin_edittext_textsize"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgBtnPasswordVisibility"
+                android:src="@drawable/ic_visibility_off_24px"
+                android:background="@null"
+                android:layout_alignRight="@+id/etPassword"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/corners_round_btn"
+            android:layout_below="@+id/ll1_Signin"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/whites"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvForgotPswd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Forgot Password?  "-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_below="@+id/btnLogin"-->
+<!--            android:layout_margin="15px"-->
+<!--            android:textStyle="italic"-->
+<!--            android:layout_marginLeft="20px"/>-->
+
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/btnLogin"-->
+    <!--android:text="Login"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"-->
+    <!--android:focusableInTouchMode="false"-->
+    <!--android:background="@drawable/corners_round_btn"-->
+    <!--android:layout_below="@+id/ll1_Signin"-->
+    <!--android:layout_marginTop="40px"-->
+    <!--android:layout_marginLeft="20px"-->
+    <!--android:textColor="@color/whites"/>-->
+
+    <!--focusable false and android:focusableInTouchMode false-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvForgotPswd"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Forgot Password?"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:layout_below="@+id/btnLogin"-->
+    <!--android:layout_margin="15px"-->
+    <!--android:textStyle="italic"-->
+    <!--android:layout_marginLeft="20px"/>-->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBtnSettings"
+        android:src="@drawable/ic_settings_24px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:clickable="true"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px"/>
+
+</RelativeLayout>

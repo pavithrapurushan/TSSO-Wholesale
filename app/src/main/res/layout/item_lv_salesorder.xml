@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created by Pavithra on 24-08-2020-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvSlNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textColor="@color/black"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/btnDeleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_close_24px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--.2 .3 .4 .1-->
+        <TextView
+            android:id="@+id/tvMRP"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="MRP" />
+
+        <TextView
+            android:id="@+id/tvQty"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:textColor="#152E61"
+            android:textStyle="bold"
+            android:paddingRight="30px"
+            android:background="@drawable/border_bottom"
+            android:text="QTY"
+            />
+
+        <!--<EditText-->
+            <!--android:id="@+id/tvQty"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="#152E61"-->
+            <!--android:textStyle="bold"-->
+            <!--android:paddingRight="30px"-->
+            <!--android:text="QTY"/>-->
+
+        <TextView
+            android:id="@+id/tvFreeQty"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0"
+            android:paddingRight="50px"
+            android:gravity="left" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Total"
+            android:paddingRight="50px"
+            android:gravity="right" />
+
+        <ImageButton
+            android:id="@+id/imgBtnRemarksItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_remarks_item"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

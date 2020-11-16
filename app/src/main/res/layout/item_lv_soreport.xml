@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10px"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSlnoReport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="#"
+                android:textColor="@color/black"
+                android:layout_weight="0.1"/>
+
+            <TextView
+                android:id="@+id/tvDocnoReport"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="Doc Number"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvDocDateReport"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="Doc Date"
+                android:paddingLeft="20px"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:layout_weight="0.1"/>
+
+
+            <TextView
+                android:id="@+id/tvNoOfItemsReport"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="Number of Items"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvApproxamtReport"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="Approx Amount"
+                android:gravity="right"
+                android:paddingRight="15px"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btnItemsReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:textColor="@color/whites"
+                android:background="@drawable/corners_round_btn_black"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

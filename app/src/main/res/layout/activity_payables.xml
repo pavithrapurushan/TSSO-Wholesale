@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/llbottombar">
+
+        <LinearLayout
+            android:id="@+id/llSOToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/activity_bg_color"
+            android:gravity="center_vertical"
+            android:paddingRight="20px"
+            android:paddingLeft="20px">
+<!--            android:background="@color/activity_bg_color"-->
+
+            <ImageButton
+                android:id="@+id/imgBtnBackPayables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:background="@null"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="10px"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCustomerNamePayables"
+                android:text=""
+                android:textColor="@color/whites"
+                android:textStyle="bold"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10px"
+            android:background="@color/activity_bg_color">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textColor="@color/whites"
+                    android:layout_weight="0.1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Doc Number"
+                    android:textColor="@color/whites"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Doc Date"
+                    android:textColor="@color/whites"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--.2 .3 .4 .1-->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whites"
+                    android:text="Overdue days"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whites"
+                    android:text="Bill Amount"
+                    android:gravity="right"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whites"
+                    android:gravity="center"
+                    android:text="Balance"
+                    android:paddingRight="5px"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvPayablesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginBottom="15px"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true">
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llbottombar"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llbottom"
+                android:background="#274888"
+                android:padding="20px"
+                android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="20px">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/whites"
+                    android:paddingLeft="30px"/>
+                <TextView
+                    android:id="@+id/tvTotAmountPayables"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="0.5"
+                    android:background="#EF7F1A"
+                    android:textColor="@color/whites"
+                    android:gravity="right"
+                    android:paddingRight="20px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20px">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/whites"
+                    android:paddingLeft="30px"/>
+                <TextView
+                    android:id="@+id/tvBalancePayables"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="0.5"
+                    android:background="#EF7F1A"
+                    android:textColor="@color/whites"
+                    android:gravity="right"
+                    android:paddingRight="20px"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

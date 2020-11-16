@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/llbottombar">
+
+            <LinearLayout
+                android:id="@+id/llSOToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/activity_bg_color"
+                android:gravity="center_vertical"
+                android:paddingRight="20px"
+                android:paddingLeft="20px">
+
+                <ImageButton
+                    android:id="@+id/imgBtnBackReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:background="@null"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="10px"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCustomerNameSOReport"
+                    android:text=""
+                    android:textColor="@color/whites"
+                    android:textStyle="bold"
+                    android:layout_weight="0.7"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10px"
+            android:background="@color/activity_bg_color">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textColor="@color/whites"
+                    android:layout_weight="0.1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Doc Number"
+                    android:textColor="@color/whites"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Doc Date"
+                    android:textColor="@color/whites"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/whites"
+                    android:layout_weight="0.1"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Items"
+                    android:textColor="@color/whites"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="Approx Amount"
+                    android:textColor="@color/whites"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+            <ListView
+            android:id="@+id/lvSoReportSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginBottom="15px"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true">
+        </ListView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llbottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/llCustInfoBottombar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15px"
+            android:background="@color/activity_bg_color">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10px">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="From"
+                        android:textColor="@color/whites"/>
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0.7"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:paddingRight="10px">-->
+<!--                        -->
+<!--                        <EditText-->
+<!--                            android:id="@+id/etFromDate"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/corners_round_btn_white"/>-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imageButtonCalender"-->
+<!--                            android:layout_width="50px"-->
+<!--                            android:layout_height="40px"-->
+<!--                            android:layout_alignBottom="@+id/etFromDate"-->
+<!--                            android:layout_toRightOf="@+id/etFromDate"-->
+<!--                            android:cropToPadding="true"-->
+<!--                            android:src="@drawable/calendar_icon"-->
+<!--                            android:onClick="showDatePickerDialog"-->
+<!--                            android:background="@null"/>-->
+
+<!--                    </RelativeLayout>-->
+
+                    <EditText
+                        android:id="@+id/etFromDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/corners_round_btn_white"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButtonCalenderFrom"
+                        android:layout_width="50px"
+                        android:layout_height="40px"
+                        android:cropToPadding="true"
+                        android:src="@drawable/calendar_icon"
+                        android:onClick="showDatePickerDialogFrom"
+                        android:background="@null"
+                        android:layout_marginLeft="10px"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10px">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:text="To"
+                        android:textColor="@color/whites"/>
+                    <EditText
+                        android:id="@+id/etToDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/corners_round_btn_white"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButtonCalenderTo"
+                        android:layout_width="50px"
+                        android:layout_height="40px"
+                        android:cropToPadding="true"
+                        android:src="@drawable/calendar_icon"
+                        android:onClick="showDatePickerDialogTo"
+                        android:background="@null"
+                        android:layout_marginLeft="10px"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:id="@+id/btnLoadSOSummary"
+                android:text="Load"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:textColor="@color/whites"
+                android:background="@drawable/corners_round_btn"
+                android:layout_margin="10px"/>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10px">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnPayables"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/corners_round_btn_black"-->
+<!--                    android:drawableLeft="@drawable/ic_payables_24px"-->
+<!--                    android:textColor="@color/whites"-->
+<!--                    android:text="PAYABLES"-->
+<!--                    android:paddingLeft="10px"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnClear"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/corners_round_btn_black"-->
+<!--                    android:drawableLeft="@drawable/ic_clear_all_24px"-->
+<!--                    android:textColor="@color/whites"-->
+<!--                    android:text="CLEAR"-->
+<!--                    android:paddingLeft="10px"-->
+<!--                    android:layout_marginTop="10px"/>-->
+<!--                &lt;!&ndash;                <Button&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:background="@drawable/corners_round_btn_black"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:drawableLeft="@drawable/ic_clear_all_24px"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:text="CLEAR"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:paddingLeft="10px"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:textColor="@color/whites"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_marginTop="10px"/>&ndash;&gt;-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10px">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSOReport"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/corners_round_btn_black"-->
+<!--                    android:drawableLeft="@drawable/ic_so_report_24px"-->
+<!--                    android:textColor="@color/whites"-->
+<!--                    android:text="SO REPORT"-->
+<!--                    android:paddingLeft="10px"/>-->
+
+
+<!--                <Button-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/btnCreateSO"-->
+<!--                    android:textColor="@color/whites"-->
+<!--                    android:background="@drawable/corners_round_btn"-->
+<!--                    android:drawableLeft="@drawable/ic_create_so_24px"-->
+<!--                    android:text="CREATE SO"-->
+<!--                    android:layout_marginTop="10px"-->
+<!--                    android:paddingLeft="10px"/>-->
+<!--            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/llRptAct1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="@color/activity_bg_color">-->
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/llpinfoact02"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="left"-->
+<!--        android:gravity="left"-->
+<!--        android:padding="2dp">-->
+
+<!--        <EditText android:id="@+id/etDate"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_weight="0.7"-->
+<!--            android:singleLine="true">-->
+<!--        </EditText>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButtonCalender"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignBottom="@+id/txtReportFilter"-->
+<!--            android:layout_toRightOf="@+id/txtReportFilter"-->
+<!--            android:cropToPadding="true"-->
+<!--            android:src="@drawable/calendar_icon"-->
+<!--            android:onClick="showDatePickerDialog"-->
+<!--            android:background="@null"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnLoadReport"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Load"-->
+
+<!--            android:layout_marginRight="10dp"-->
+
+<!--            android:width="100dp"-->
+<!--            android:layout_gravity="left" />-->
+<!--    </LinearLayout>-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/lvHeader"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="false"-->
+<!--        android:fastScrollEnabled="true"-->
+<!--        android:focusable="false"-->
+<!--        android:focusableInTouchMode="false"-->
+<!--        android:height="30dp"-->
+<!--        android:longClickable="false"-->
+<!--        android:scrollbarAlwaysDrawVerticalTrack="true"-->
+<!--        android:listSelector="@android:color/transparent"-->
+<!--        android:cacheColorHint="@android:color/transparent"-->
+<!--        android:scrollbarStyle="insideInset"-->
+<!--        android:background="#0000ff"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="1dp"/>-->
+
+<!--    &lt;!&ndash; below commented lv is the original on 13/07/2017&ndash;&gt;-->
+<!--    <ListView-->
+<!--        android:id="@+id/lvList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:clickable="false"-->
+<!--        android:fastScrollEnabled="true"-->
+<!--        android:focusable="false"-->
+<!--        android:focusableInTouchMode="false"-->
+<!--        android:height="500dp"-->
+<!--        android:longClickable="false"-->
+<!--        android:scrollbarAlwaysDrawVerticalTrack="true"-->
+<!--        android:listSelector="@android:color/transparent"-->
+<!--        android:cacheColorHint="@android:color/transparent"-->
+<!--        android:scrollbarStyle="insideInset"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginRight="1dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+
+<!--    &lt;!&ndash;marginright before 10dp&ndash;&gt;-->
+
+<!--</LinearLayout>-->
